@@ -6,6 +6,8 @@
 # node executable.
 #
 
+ROS_DISTRO=hydro
+
 g++ hello_world_node.cpp -o hello_world_node\
   -I/opt/ros/$ROS_DISTRO/include\
   -L/opt/ros/$ROS_DISTRO/lib\
