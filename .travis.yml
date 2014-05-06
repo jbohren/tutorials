@@ -14,5 +14,6 @@ before_install:
   - ros_ci_bootstrap
   # Create isolated workspace based on the ros distro
   - source /opt/ros/$ROS_DISTRO/setup.bash
-script: test.bash
+script: 
+  - ./test.bash
 
