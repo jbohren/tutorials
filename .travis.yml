@@ -12,6 +12,7 @@ before_install:
   # Bootstrap a minimal ROS installation
   - git clone https://github.com/jhu-lcsr/ros_ci_tools /tmp/ros_ci_tools && export PATH=/tmp/ros_ci_tools:$PATH
   - ros_ci_bootstrap
+  - sudo apt-get install ros-hydro-ros-full
 script: 
   - source /opt/ros/$ROS_DISTRO/setup.bash
   - ./test.bash
