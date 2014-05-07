@@ -6,6 +6,8 @@
 # node executable.
 #
 
+set -ve
+
 ROS_DISTRO=hydro
 
 g++ hello_world_node.cpp -o hello_world_node\
