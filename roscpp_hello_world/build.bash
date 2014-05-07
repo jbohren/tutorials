@@ -10,7 +10,7 @@ set -ve
 
 ROS_DISTRO=hydro
 
-g++ hello_world_node.cpp -o hello_world_node\
+g++ -v hello_world_node.cpp -o hello_world_node\
   -I/opt/ros/$ROS_DISTRO/include\
   -L/opt/ros/$ROS_DISTRO/lib\
   -Wl,-rpath,/opt/ros/$ROS_DISTRO/lib\
